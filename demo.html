@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            position: relative;  
+        }
+        .box{
+            background-color: black;
+            width: 100%;
+            height: 841px;
+           
+        }
+        video{
+            position: absolute;
+            top: 1px;
+            opacity: 0.7;
+        }
+        .logo{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .nav{
+            position: absolute;
+            top: 25px;
+            left: 105px;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav li{
+            float: left;     
+            font-size: 16px;
+        }
+        .btn{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            border: 2px solid white;
+            color: white;
+            background: transparent;
+            font-size:13px;
+            font-weight: 700;
+            text-align: center;
+            padding: 10px 32px;
+            font-family: helveticanav-link
+        }
+        .login{
+            position: absolute;
+            top: 30px;
+            right: 165px;
+            text-decoration: none;
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+        }
+        .nav-link:hover{
+            color: white;
+        }
+        h1{
+            text-align: center;
+            margin-top: -590px;
+            opacity: 0.9;
+            color: white;
+            font-size: 60px;
+            
+            font-family: helvetica;
+   
+        }
+        .pre{
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            opacity: 0.9;
+            color: white;
+        }
+        .btn1{
+            background-color: #4ea7f2;
+            color: white;
+            font-family: helvetica;
+            font-size: 16px;
+            font-weight:600;
+            padding: 10px 62px;
+            opacity: 0.9;
+            border: none;
+            margin-top: 50px;
+            margin-left: 36%;
+        }
+        .btn2{
+            background-color: #fff;
+            font-family: helvetica;
+            font-size: 16px;
+            font-weight:600;
+            padding: 10px 40px;
+            opacity: 0.9;
+            border: none;
+        }
+        .ico2{
+            position: absolute;
+            right: 20px;
+            top: 585px;
+            position: fixed;
+        }
+        .ico{
+            opacity: 0.8;
+            color: white;
+            margin-top: 110px;
+        } 
+        .demo{
+            margin-top: 30px;
+           margin-left: 10%;
+        }
+        .img1{
+            margin-left: 14%;
+            padding-top: 70px;
+        }
+        .h2{
+            text-align: center;
+            font-size: 40px;
+            font-family: helvetica;
+            padding-top: 70px;
+        }
+        .pre1{
+            width: 58%;
+            font-size: 18px;
+            text-align: center;
+            margin-left: 20%;
+            padding-top: 20px;
+        }
+        .head{
+            font-size: 24px;
+            font-family: helvetica;
+            text-align: center;
+            color:  #262626;
+            padding-top: 30px;
+        }
+        .img2{
+            padding-top: 50px;
+            margin-left: 4%;
+        }
+        .main-box{
+            background-color: #f7f7f7;
+            width: 100%;
+            height: 600px;
+            margin-top: 80px;
+            opacity: 1;
+        }
+        .cl{
+            background-color:#ffffff;
+            width: 23%;
+            height: 340px;
+            margin: 2px;
+            padding-left: 20px;
+            
+        }
+        .h4{
+            font-size: 28px;
+            font-family: helvetica;
+            color: #404040;
+            padding-top: 20px;
+
+        }
+        .pre2{
+            font-size: 17px;
+            color: #414141;
+            padding-top: 10px;
+        }
+        .btn3{
+            background-color: #4ea7f2;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 90px;
+            border: none;
+            border-radius: 5px;
+        }
+        .pre3{
+            width: 50%;
+            font-size: 19px;
+            text-align: center;
+            margin-left: 25%;
+            padding-top: 20px;
+            color: #000000;;
+        }
+        .pre4{
+            width: 40%;
+            font-size: 22px;
+            text-align: center;
+            margin-left: 30%;
+            padding-top: 20px;
+            color:black;
+            line-height: 38px;
+            letter-spacing: 0.22px;
+        }
+        .main-box1{
+            background-color: #0A0A20;
+            width: 100%;
+            height: 450px;
+            box-sizing: border-box;
+            margin-top: 60px;
+            color: white;
+            position: relative;
+        }
+        .btn4{
+            margin-left:36%;
+            background-color: #4ea7f2;
+            padding: 13px 40px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family:  helvetica;
+            position: absolute;
+           top: 300px;
+        }
+        .link{
+            text-decoration: none;
+            color:#414141;
+            font-size: 13px;
+            opacity: 0.8;
+            
+        }
+        .h6{
+            padding-top: 70px;
+            color: black;
+            font-weight: 600;
+            opacity: 0.7;
+           
+        }
+        .h5{ 
+            padding-top: 20px;
+            color: black;
+            font-weight: 600;
+            opacity: 0.7;
+            font-size: 15px; 
+       }
+       .btn5{
+        background-color: #339AF0 ;
+        font-size: 13px;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        margin-top: 25px;
+       }
+       .a:hover{
+        border-bottom: 1px solid gray;
+       }
+       .h3{
+        font-size: 21px;
+        font-family: helvetica;
+        letter-spacing: 0.22px;
+        color: #111111;
+        padding-top: 40px;
+       }
+       .p{
+        font-size: 18px;
+        margin-left: 66px;
+        width: 80%;
+        color: #000000;
+        opacity: 0.9;
+        padding-top: 20px;
+       }
+       .btn6{  
+        background-color: #339AF0 ;
+        font-size: 13px;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-left: 37%;
+        width: 20%;
+        margin-bottom: 120px;
+       
+       }
+      
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="box"></div>
+        <video width="100%" height="900px" controls style="margin-top: -25px;">
+            <source src="livestrimeaing-images/Office Work Videos.mp4" type="video/mp4">          
+        </video>
+            <a href="#"> <img class="logo" src="livestrimeaing-images/vimeo-logo-white.png"width="100px"></a>
+            <ul class="nav">  
+                <li class="nav-item">
+                    <a href="#" style="font-size: 21px; margin-left: 20px;">.Livestream</a>
+                </li>            
+                <li class="nav-item">
+                  <a class="nav-link ps-5"href="#">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-3" href="#">SOLUTIONS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ps-3" href="#">PRICING</a>
+                </li>
+            </ul>
+            <button class="btn">GO LIVE</button>
+            <a  href="#" class="login">Log in</a>
+            <h1>Live streaming solutions you can count on.</h1>
+            <p class="pre">We make it easy to livestream engaging virtual events, reach your remote workforce, and<br>launch a subscription channel.</p>
+            <button class="btn1 rounded-2 ">SEE PLANS</button>
+            <button class="btn2 rounded-2 ms-2 ">JOIN VIMEO FREE</button>
+            <img class="ico2" src="livestrimeaing-images/smile-icon.png"width="70px">
+        <div class="container ico">
+            <p style="font-size: 22px;font-weight: 600;text-align: center;">Trusted by leading brands</p>
+           <img class="demo"   src="livestrimeaing-images/linkedin-logo-white.png"width="100px">
+           <img class="demo"   src="livestrimeaing-images/delo-removebg-preview.png"width="100px"> 
+           <img class="demo"   src="livestrimeaing-images/hillsong-removebg-preview.png"width="100px">
+           <img class="demo"   src="livestrimeaing-images/nikon-removebg-preview.png"width="100px">
+           <img class="demo"   src="livestrimeaing-images/Lesmills-removebg-preview.png"width="200px">
+        </div>
+
+        <div class="container">
+            <img class="img1" src="livestrimeaing-images/vid_wrk_2.webp">
+            <h2 class="h2">Put your live video to work</h2>
+            <p class="pre1">Reach everyone in real time, whether you're live streaming a conference, webinar, or your company all-hands. Live streaming gives you a way to connect with your employees, customers, and community.</p>
+        </div>
+            <div>
+                <img src="livestrimeaing-images/aud_grw_2.webp"width="100%">
+                <h2 class="h2">Grow your audience, everywhere</h2>
+                <p class="pre1" style="width: 50%; margin-left: 25%;">Engage followers, customers, or employees around the world, wherever they watch. Easily stream from any device across social media platforms or your own website. Throw stellar events and make your streaming business thrive, with live.</p>
+                <h4 class="head">Share everywhere</h4>
+                <img style="margin-left: 20%;" class="img2" src="livestrimeaing-images/Linkedub-black.png"width="130px">
+                <img class="img2" src="livestrimeaing-images/youtube.png"width="130px">
+                <img class="img2" src="livestrimeaing-images/periscope-vector-logo.png"width="130px">
+                <img class="img2" src="livestrimeaing-images/whatsapp.png"width="150px">
+                <img class="img2" src="livestrimeaing-images/twitch.png"width="130px">
+            </div>
+                <div class="main-box">
+                    <h2 class="h2" style="font-size: 37px; color: #404040;margin-bottom: 50px;">Start live streaming with Vimeo</h2>
+                    <div class="row">
+                        <div class="col-sm-4 cl" style="margin-left: 16%;">
+                            <h4 class="h4">Live stream<br> today</h4>
+                            <p class="pre2">Get started with live video, engage audiences everywhere.</p>
+                            <p style="font-size: 25px; color: #414141;">$65</p>
+                            <p style="margin-top: -20px;opacity: 0.8;">per seat/month (billed annually)</p>
+                            <button class="btn3">GET ADVANCED</button>
+                            <p style="margin-left: 28%; padding: 10px 0px;">or<a href="#" style="text-decoration: none; padding-left: 4px;">start free trial</a></p>
+                        </div>
+                        <div class="col-sm-4 cl">
+                            <h4 class="h4">Explore secure live<br> streaming</h4>
+                            <p class="pre2">Get dedicated support, advanced security and control for virtual events, corporate communications, and training.</p><br><br>
+                            <button class="btn3">GET ADVANCED</button>
+                        </div>
+                        <div class="col-sm-4 cl">
+                            <h4 class="h4">Create a subscription<br>channel with live</h4>
+                            <p class="pre2">Build a subscription channel and monetize your content with apps everywhere.</p><br><br>
+                            <button class="btn3" style="margin-top: 22px;">GET ADVANCED</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <h2 style="font-size:43px; text-align: center; color: black; padding-top: 10%;">Everything you need to livestream</h2>
+
+                    <div class="row container" style="width: 60%; margin-left: 20%; padding-top: 110px;">
+                        <div class="col-sm-6">
+                            <img src="livestrimeaing-images/live images.png"width="100px" style="margin-left:-190px ;">
+                            <h3 class="h3">Flawless adaptive streaming</h3>
+                            <p class="p">Give your viewers the best quality across devices, even with limited bandwidth.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="livestrimeaing-images/video-managment.jpg"width="100px" style="margin-left:-240px ;">
+                            <h3 class="h3" style="margin-left: -140px;">Video management</h3>
+                            <p class="p" style="margin-left: 40px;">Centralize your organization’s live and on-demand video, build secure viewing<br> destinations, or monetize your video<br> library.</p>
+                        </div>
+
+                        <div class="col-sm-6 pt-5">
+                            <img src="livestrimeaing-images/graphic.png"width="100px" style="margin-left:-190px ;">
+                            <h3 class="h3">Live production graphics and<br> tools</h3>
+                            <p class="p">Create custom registration forms for your<br> events. Add lower-thirds, transitions, and logos, and engage viewers with moderated chat, Q&A, and live polls.</p>
+                        </div>
+                        <div class="col-sm-6 pt-5">
+                            <img src="livestrimeaing-images/live images.png"width="100px" style="margin-left:-240px ;">
+                            <h3 class="h3" style="margin-left: -170px;">Priority support</h3>
+                            <p class="p" style="margin-left: 46px;">Live support when you set up and stream during business hours, plus options for live stream production services and 24/7 support.</p>
+                        </div>
+                        <button class="btn6">LEARN MORE</button>
+                    </div>
+
+                  <img src="livestrimeaing-images/cf2f.webp"width="65%">
+                    <h2 class="h2">Connect face-to-face without the jet lag.</h2>
+                    <p class="pre3">Why live streaming? Simply put, live streaming is one of the best ways to connect in a meaningful and authentic way with your community. Every day around the world, in offices, fitness studios, stadiums, houses of worship,and our own houses, moments are made. A livestream platform connects you instantly to your employees, customers, subscribers, or followers when a virtual event or series is your best option.</p>
+                    <img src="livestrimeaing-images/chris-packard.webp" style="padding-top: 70px;">
+                    <p class="pre4">"Vimeo Livestream makes my job easy, because it's a super intuitive interface. They have the most rock solid backend platform. And ultimately, you have support, so in case there are any issues, they're immediately there to help you troubleshoot."</p>
+                     <h3 style="color: #424242; font-size: 24px; padding-top: 30px;">Chris Packard</h3>
+                     <p style="font-size: 22px; color: #424242; padding-top: 15px;">Streaming Producer, LinkedIn</p>
+                </div>
+                    <div class="main-box1">
+                        <h2 class="h2" style="padding-top: 120px; font-size: 45px;">Ready to start live streaming<br> with Vimeo?</h2>
+                        <button class="btn4">GET STARTED</button>
+                        <p style="color:inherit; font-size: 19px;font-weight: 600;margin-left: 49%;margin-top: 80px;">Or call 1 877 977 8732</p>
+                    
+                    </div>
+                    <!--------footer--------->
+                    <div class="row" style="width: 75%; margin-left: 200px;">
+                        <div class="col-sm-3 cl2">
+                            <h6 class="h6">ABOUT</h6>
+                            <a class="link a" href="#">Livestream is now Vimeo</a><br>
+                            <a class="link a" href="#">Careers</a><br>
+                            <a class="link a" href="#">Blog</a><br>
+                            <a class="link a" href="#">Contact</a><br>
+                        </div>
+                        <div class="col-sm-3 cl2">
+                            <h6 class="h6">PRODUCTS</h6>
+                            <a class="link a" href="#">Vimeo Enterprise</a><br>
+                            <a class="link a" href="#">Virtual Events</a><br>
+                            <a class="link a" href="#">Webinar</a><br>
+                            <a class="link a" href="#">Studio</a><br>
+                            <a class="link a" href="#">Screen Recorder</a><br>
+                        </div>
+                        <div class="col-sm-3 cl2">
+                            <h6 class="h6">DISCOVER</h6>
+                            <a class="link a" href="#">Watch</a>
+                            <h6 class="h5">SERVICES</h6>
+                            <a class="link a" href="#">Production</a><br>
+                        </div>
+                        <div class="col-sm-3">
+                            <h6 class="h6">SALES & SUPPORT</h6>
+                            <a class="link a" href="#">Get Help – 7 days a week</a><br>
+                            <a class="link a" href="#">Contact Us</a><br>
+                            <a class="link " href="#">United States :877 977 8732</a><br>
+                            <a class="link " href="#">International :+1 646 490 1679</a><br>
+                            <button class="btn5"><img class="pe-2" src="livestrimeaing-images/icons8-thumb-24 (1).png">Like 364K</button>
+                        </div>
+                        <hr style="margin-top: 40px; color: gray;">
+                        <p>© 2022 Vimeo.com, Inc.<a class="a" href="#" style="text-decoration: none; margin-left: 20px; color: #262626;">Service Status</a><a href="#" style="text-decoration: none; margin-left: 64%; color: #262626;"  class="a">Terms & Privacy</a></p>
+                    </div>
+           
+                
+        
+    
+        
+        
+       
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
